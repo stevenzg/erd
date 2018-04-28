@@ -1,0 +1,15 @@
+{
+  "name": "erd",
+  "version": "0.0.1",
+  "description": "Generate entity-relationship diagram.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "erd",
+    "er"
+  ],
+  "author": "Steven Guo <dreamforce@live.cn>",
+  "license": "ISC"
+}
