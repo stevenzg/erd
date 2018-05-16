@@ -1,2 +1,5 @@
 src/
 doc/
+webpack.config.js
+erd.pdf
+erd.png

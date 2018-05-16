@@ -10,10 +10,10 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'erd.js'
   },
-  // devServer: {
-  //   contentBase: path.join(__dirname, "example"),
-  //   port: 9000
-  // },
+  devServer: {
+    contentBase: path.join(__dirname, "src"),
+    port: 9000
+  },
   module: {
     rules: [
       {

@@ -1,16 +1,22 @@
 {
   "name": "erd",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Generate entity-relationship diagram.",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack --progress --colors",
+    "watch": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "erd",
-    "er"
+    "er",
+    "models",
+    "orm",
+    "entity relationship",
+    "entity relationship diagram",
+    "entity relationship model"
   ],
   "author": "Steven Guo <dreamforce@live.cn>",
   "license": "ISC",

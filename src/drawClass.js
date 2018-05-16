@@ -51,18 +51,18 @@ const drawClass = function (elem, classDef) {
     isFirst = false
   })
 
-  const membersBox = members.node().getBBox()
+  // const membersBox = members.node().getBBox()
 
-  const methodsLine = g.append('line') // text label for the x axis
-    .attr('x1', 0)
-    .attr('y1', conf.padding + titleHeight + conf.dividerMargin + membersBox.height)
-    .attr('y2', conf.padding + titleHeight + conf.dividerMargin + membersBox.height)
+  // const methodsLine = g.append('line') // text label for the x axis
+  //   .attr('x1', 0)
+  //   .attr('y1', conf.padding + titleHeight + conf.dividerMargin + membersBox.height)
+  //   .attr('y2', conf.padding + titleHeight + conf.dividerMargin + membersBox.height)
 
-  const methods = g.append('text') // text label for the x axis
-    .attr('x', conf.padding)
-    .attr('y', titleHeight + 2 * conf.dividerMargin + membersBox.height + conf.textHeight)
-    .attr('fill', 'white')
-    .attr('class', 'classText')
+  // const methods = g.append('text') // text label for the x axis
+  //   .attr('x', conf.padding)
+  //   .attr('y', titleHeight + 2 * conf.dividerMargin + membersBox.height + conf.textHeight)
+  //   .attr('fill', 'white')
+  //   .attr('class', 'classText')
 
   // isFirst = true
 
@@ -79,7 +79,7 @@ const drawClass = function (elem, classDef) {
     .attr('height', classBox.height + conf.padding + 0.5 * conf.dividerMargin)
 
   membersLine.attr('x2', classBox.width + 2 * conf.padding)
-  methodsLine.attr('x2', classBox.width + 2 * conf.padding)
+  // methodsLine.attr('x2', classBox.width + 2 * conf.padding)
 
   classInfo.width = classBox.width + 2 * conf.padding
   classInfo.height = classBox.height + conf.padding + 0.5 * conf.dividerMargin
