@@ -64,7 +64,6 @@ function generateERD() {
   for (let i = 0; i < keys.length; i++) {
     const classDef = models[keys[i]]
     const node = drawClass(diagram, classDef)
-    console.log('node.id::', node.id)
     idCache[node.id] = node
     // Add nodes to the graph. The first argument is the node id. The second is
     // metadata about the node. In this case we're going to add labels to each of

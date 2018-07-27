@@ -4,9 +4,7 @@ const trim = (str) => {
 
 const analysisText = (modelsText) => {
   modelsText = trim(modelsText)
-  console.log('modelsText::', modelsText)
   let textArray = modelsText.split('\n')
-  console.log('textArray::', textArray)
   
   let seperators = ['#', '[']
   let models = {}
@@ -23,11 +21,9 @@ const analysisText = (modelsText) => {
         if (!isModelEnd) {
           let keyVal = textItem.split(/(.+)\s(.+)/)
           // let attrModel = JSON.parse(keyVal[1])
-          // console.log('attrModel::', attrModel)
           models[currentModelKey].members.push(textItem)
         } else {
           let relationData = textItem.split(/\s/)
-          // console.log('relationData::', relationData)
           let relationType = relationData[1]
           switch(relationType) {
             case '*--*':
@@ -48,24 +44,17 @@ const analysisText = (modelsText) => {
         }
       }
     } else if (firstLetter === '[') {
-      console.log('textItem::', textItem)
       let modelName = textItem.match(/\[(.+)\]/)
-      console.log('modelName::', modelName)
       currentModelKey = modelName[1]
-      console.log('currentModelKey::', currentModelKey)
       models[currentModelKey] = {
         id: currentModelKey,
         members: []
       }
     } else if (textItem === '# Relationships') {
       isModelEnd = true
-    } else if (firstLetter === '#') {
-      // isModelEnd = true
-    } 
+    }
   }
 
-  console.log('models::', models)
-  console.log('relations::', relations)
   return {
     models,
     relations

@@ -7,7 +7,6 @@ const erd = async ({modelsText, outputType = 'png'}) => {
   let width = 800
   let height = 600
   page.setViewport({ width, height })
-  console.log(`file://${path.join(__dirname)}`)
   await page.goto(`file://${path.join(__dirname, './dist/erd.html')}`)
 
   const ret = await page.evaluate(modelsText => {

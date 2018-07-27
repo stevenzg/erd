@@ -4,7 +4,7 @@ Generate entity-relationship diagram according to model text
 
 ## How to use
 
-Browser
+**Browser**
 
 ```
 <!DOCTYPE html>
@@ -26,11 +26,15 @@ Browser
 </html>
 ```
 
-Node.js
+**Node.js**
 ```
 let erd = require('erd')
 erd({modelsText, outputType})
 ```
+
+**Use mongoose models to generate erd**
+
+[merd](https://www.npmjs.com/package/merd)
 
 ## Parameters
 **modelsText**
@@ -70,3 +74,11 @@ Post *--* Player
 
 * png
 * pdf
+
+## To Do
+* Use correct relationship lines
+* Make codes better
+* Add tests
+
+## Credits
+MANY THANKS to the [mermaid](https://github.com/knsv/mermaid) for the beginning codes and idea to generate erd digram.

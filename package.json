@@ -1,6 +1,6 @@
 {
   "name": "erd",
-  "version": "0.0.4",
+  "version": "0.0.8",
   "description": "Generate entity-relationship diagram.",
   "main": "index.js",
   "scripts": {
