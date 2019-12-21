@@ -74,11 +74,13 @@ Post *--* Player
 
 * png
 * pdf
+* html
 
 ## To Do
 * Use correct relationship lines
 * Make codes better
 * Add tests
+* Parse title element
 
 ## Credits
 MANY THANKS to the [mermaid](https://github.com/knsv/mermaid) for the beginning codes and idea to generate erd digram.
