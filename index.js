@@ -28,7 +28,14 @@ const erd = async ({modelsText, outputType = 'png'}) => {
       await page.pdf({ path: 'erd.pdf', printBackground: backgroundColor !== 'transparent' })
       break
     case 'html':
-        break
+      //TODO: add the html case here (with docs)
+      //await
+      const fse = require('fs-extra');
+      const html = await page.$eval("#erd", (element) => {
+        return element.innerHTML
+      });
+      await fse.outputFile("erd.html", html );
+      break
   }
 
   await browser.close()
