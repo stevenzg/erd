@@ -36,7 +36,7 @@
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
-    "d3": "^4.13.0",
+    "d3": "^7.6.1",
     "dagre-layout": "^0.8.8",
     "fs-extra": "^8.1.0",
     "graphlibrary": "^2.2.0",
